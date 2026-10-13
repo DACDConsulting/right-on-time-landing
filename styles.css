@@ -1,4 +1,4 @@
-/* Right On Time — Pure CSS mockups, no external images */
+/* Right On Time — iPhone 18 Pro Max style mockups */
 :root {
   --bg: #ffffff;
   --text: #1d1d1f;
@@ -54,17 +54,46 @@ body {
 .trust-bar { display: flex; flex-wrap: wrap; gap: 16px 24px; font-size: 0.85rem; color: var(--text-secondary); }
 .stars { color: #ff9500; }
 
+/* iPhone 18 Pro Max style frame */
 .phone {
-  width: 280px; height: 560px; background: #000; border-radius: 40px; padding: 12px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.16); margin: 0 auto;
+  width: 320px;
+  height: 680px;
+  background: #1c1c1e;
+  border-radius: 48px;
+  padding: 8px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.18), inset 0 0 0 1px rgba(255,255,255,0.08);
+  margin: 0 auto;
+  position: relative;
 }
-.phone.small { width: 240px; height: 480px; }
+.phone.small {
+  width: 270px;
+  height: 574px;
+}
 .phone-screen {
-  height: 100%; border-radius: 32px; overflow: hidden;
-  display: flex; flex-direction: column;
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-.screen-content { padding: 20px 16px; flex: 1; }
-.screen-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 4px; }
+.phone-screen::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 28px;
+  background: #000;
+  border-radius: 20px;
+  z-index: 10;
+}
+.screen-content {
+  padding: 48px 18px 20px;
+  flex: 1;
+}
+.screen-title { font-size: 1.7rem; font-weight: 700; margin-bottom: 4px; }
 .screen-sub { font-size: 0.85rem; color: #8e8e93; margin-bottom: 16px; }
 .screen-sub.orange { color: var(--orange); font-weight: 600; }
 
@@ -76,7 +105,7 @@ body {
 
 .card { background: white; border-radius: 16px; padding: 16px; margin-top: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
 .card-label { font-weight: 600; }
-.big-time { font-size: 2.2rem; font-weight: 700; margin: 4px 0; }
+.big-time { font-size: 2.3rem; font-weight: 700; margin: 4px 0; }
 .card-detail { font-size: 0.8rem; color: #8e8e93; margin: 4px 0; }
 .toggle-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; margin: 6px 0; }
 .toggle { width: 36px; height: 20px; background: #e5e5ea; border-radius: 10px; position: relative; }
@@ -85,7 +114,7 @@ body {
 
 .times-row { display: flex; justify-content: space-around; background: white; border-radius: 14px; padding: 12px; margin: 12px 0; }
 .tiny { font-size: 0.65rem; letter-spacing: 0.05em; color: #8e8e93; }
-.time { font-size: 1.3rem; font-weight: 700; }
+.time { font-size: 1.35rem; font-weight: 700; }
 
 .add-all { background: var(--orange); color: white; text-align: center; padding: 12px; border-radius: 12px; font-weight: 600; margin: 12px 0; }
 .mini-card { background: white; border-radius: 12px; padding: 12px; margin: 8px 0; font-size: 0.85rem; }
@@ -97,7 +126,7 @@ body {
 .nightstand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .nightstand h2 { font-size: 2.6rem; margin-bottom: 16px; }
 .nightstand p { color: #a1a1a6; font-size: 1.1rem; }
-.night-time { font-size: 3.5rem; font-weight: 300; letter-spacing: -0.02em; }
+.night-time { font-size: 3.6rem; font-weight: 300; letter-spacing: -0.02em; }
 .night-sub { font-size: 0.9rem; margin: 8px 0; opacity: 0.8; }
 .night-warn { font-size: 0.75rem; color: #ffcc00; margin-top: 20px; }
 .center { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; }
@@ -159,6 +188,7 @@ cite { font-style: normal; color: var(--text-secondary); font-size: 0.9rem; }
   .hero h1 { font-size: 2.8rem; }
   .section h2, .cta-final h2 { font-size: 2.2rem; }
   .header nav { display: none; }
-  .phone { width: 220px; height: 440px; }
+  .phone { width: 250px; height: 530px; }
+  .phone.small { width: 220px; height: 468px; }
   .mock-row { margin-bottom: 50px; gap: 30px; }
 }
