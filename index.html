@@ -41,17 +41,16 @@
       </div>
       <div class="hero-mock fade-up delay-1">
         <div class="phone">
-          <div class="phone-screen">
-            <div class="app-ui">
-              <div class="app-status">Today</div>
-              <div class="trip-card">
-                <div class="leave-label">Leave by</div>
-                <div class="time-big">5:32 <span>PM</span></div>
-                <div class="destination">Irvine · Heavy traffic</div>
-                <div class="alarms">
-                  <div>Wake alarm — 5:02 PM</div>
-                  <div>Alarm to leave — 5:32 PM</div>
-                </div>
+          <div class="phone-screen today-screen">
+            <div class="screen-content">
+              <div class="screen-title">Today</div>
+              <div class="screen-sub">Good afternoon</div>
+              <div class="card">
+                <div class="card-label">Irvine</div>
+                <div class="big-time">5:32 PM</div>
+                <div class="card-detail">Leave by · Heavy traffic</div>
+                <div class="toggle-row"><span>Wake alarm</span><span class="toggle on"></span></div>
+                <div class="toggle-row"><span>Alarm to leave</span><span class="toggle on"></span></div>
               </div>
             </div>
           </div>
@@ -64,31 +63,90 @@
     <div class="container">
       <div class="privacy-inner">
         <div class="privacy-icon">🔒</div>
-        <div>
-          <strong>Privacy by design.</strong> No account required. No developer servers. No analytics. Your schedules, locations, and alarms stay on your iPhone.
+        <div><strong>Privacy by design.</strong> No account required. No developer servers. No analytics. Your schedules, locations, and alarms stay on your iPhone.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="container">
+      <h2 class="fade-up">How it works</h2>
+      <div class="mock-row fade-up">
+        <div class="mock-text">
+          <div class="step-num">1</div>
+          <h3>See tomorrow clearly</h3>
+          <p>Wake and leave times calculated from live traffic, weather, and your get-ready buffer.</p>
+        </div>
+        <div class="phone small">
+          <div class="phone-screen tomorrow-screen">
+            <div class="screen-content">
+              <div class="screen-title">Tomorrow</div>
+              <div class="screen-sub orange">Thursday, August 20</div>
+              <div class="times-row">
+                <div><div class="tiny">GET READY</div><div class="time">5:24 AM</div></div>
+                <div><div class="tiny">LEAVE</div><div class="time">5:54 AM</div></div>
+              </div>
+              <div class="card-detail">Brooklyn · arrive 7:00 AM</div>
+              <div class="card-detail">Moderate traffic · +11 min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-row reverse fade-up">
+        <div class="mock-text">
+          <div class="step-num">2</div>
+          <h3>Approve calendar drives</h3>
+          <p>Review events with addresses. Add the ones you want planned automatically.</p>
+        </div>
+        <div class="phone small">
+          <div class="phone-screen approve-screen">
+            <div class="screen-content">
+              <div class="screen-title">Approve</div>
+              <div class="add-all">Add all 3 drives</div>
+              <div class="mini-card">Team meeting<br><small>Saturday 10:00 AM</small></div>
+              <div class="mini-card">Dentist<br><small>Saturday 2:00 PM</small></div>
+              <div class="mini-card">Client visit<br><small>Sunday 11:00 AM</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-row fade-up">
+        <div class="mock-text">
+          <div class="step-num">3</div>
+          <h3>Set your weekly schedule</h3>
+          <p>Recurring commutes for each day of the week. Calendar events can still override.</p>
+        </div>
+        <div class="phone small">
+          <div class="phone-screen schedule-screen">
+            <div class="screen-content">
+              <div class="screen-title">Weekly schedule</div>
+              <div class="toggle-row"><span>Use a set weekly schedule</span><span class="toggle on"></span></div>
+              <div class="day-row"><span>Monday</span><span>Brooklyn</span></div>
+              <div class="day-row"><span>Tuesday</span><span>Queens</span></div>
+              <div class="day-row"><span>Wednesday</span><span>Brooklyn</span></div>
+              <div class="day-row"><span>Thursday</span><span>Midtown</span></div>
+              <div class="day-row"><span>Friday</span><span>Queens</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="how" class="section how">
-    <div class="container">
-      <h2 class="fade-up">How it works</h2>
-      <div class="steps">
-        <div class="step fade-up">
-          <div class="step-num">1</div>
-          <h3>Set your destination</h3>
-          <p>Tell the app where you need to be, your desired arrival time, and how long you need to get ready.</p>
-        </div>
-        <div class="step fade-up delay-1">
-          <div class="step-num">2</div>
-          <h3>Get your perfect times</h3>
-          <p>Right On Time uses live Apple Maps traffic to calculate your ideal wake-up and leave-by times.</p>
-        </div>
-        <div class="step fade-up delay-2">
-          <div class="step-num">3</div>
-          <h3>Alarms adjust automatically</h3>
-          <p>If traffic changes, your alarms can shift within the limits you set — so you can stay in bed longer when the roads clear.</p>
+  <section class="nightstand">
+    <div class="container nightstand-grid">
+      <div class="nightstand-text fade-up">
+        <h2>Nightstand Mode</h2>
+        <p>Place your iPhone face up. The screen stays dim, shows your next wake and leave times, and keeps watching traffic overnight.</p>
+      </div>
+      <div class="phone fade-up delay-1">
+        <div class="phone-screen nightstand-screen">
+          <div class="screen-content center">
+            <div class="night-time">5:14 PM</div>
+            <div class="night-sub">Wake 7:40 AM · Leave 8:10 AM</div>
+            <div class="night-sub">Traffic checks begin at 5:40 AM</div>
+            <div class="night-warn">Not charging — plug in for all-night traffic watching</div>
+          </div>
         </div>
       </div>
     </div>
@@ -98,30 +156,12 @@
     <div class="container">
       <h2 class="fade-up">Everything you need to stop guessing</h2>
       <div class="feature-grid">
-        <div class="feature fade-up">
-          <h3>Traffic-aware alarms</h3>
-          <p>Separate wake and leave alarms that respond to real-time traffic conditions.</p>
-        </div>
-        <div class="feature fade-up delay-1">
-          <h3>Weekly schedule + one-time trips</h3>
-          <p>Set your regular commute or add a single trip when plans change.</p>
-        </div>
-        <div class="feature fade-up delay-2">
-          <h3>Nightstand mode & ETA sharing</h3>
-          <p>Keep the alarm visible overnight and share your arrival time with others.</p>
-        </div>
-        <div class="feature fade-up">
-          <h3>Calendar Auto-Commute <span class="pro-badge">Pro</span></h3>
-          <p>Approve calendar events and the app plans the drive and alarms for you.</p>
-        </div>
-        <div class="feature fade-up delay-1">
-          <h3>Weather-aware wake times <span class="pro-badge">Pro</span></h3>
-          <p>Optional buffers for rain or severe weather so you leave with extra time.</p>
-        </div>
-        <div class="feature fade-up delay-2">
-          <h3>Unlimited profiles <span class="pro-badge">Pro</span></h3>
-          <p>Multiple commute profiles for different days, locations, or routines.</p>
-        </div>
+        <div class="feature fade-up"><h3>Traffic-aware alarms</h3><p>Separate wake and leave alarms that respond to real-time traffic.</p></div>
+        <div class="feature fade-up delay-1"><h3>Weekly schedule + one-time trips</h3><p>Set your regular commute or add a single trip when plans change.</p></div>
+        <div class="feature fade-up delay-2"><h3>Nightstand mode & ETA sharing</h3><p>Keep the alarm visible overnight and share your arrival time with others.</p></div>
+        <div class="feature fade-up"><h3>Calendar Auto-Commute <span class="pro-badge">Pro</span></h3><p>Approve calendar events and the app plans the drive and alarms for you.</p></div>
+        <div class="feature fade-up delay-1"><h3>Weather-aware wake times <span class="pro-badge">Pro</span></h3><p>Optional buffers for rain or severe weather.</p></div>
+        <div class="feature fade-up delay-2"><h3>Unlimited profiles <span class="pro-badge">Pro</span></h3><p>Multiple commute profiles for different days or routines.</p></div>
       </div>
     </div>
   </section>
@@ -146,14 +186,8 @@
     <div class="container">
       <h2 class="fade-up">What people are saying</h2>
       <div class="quotes">
-        <blockquote class="fade-up">
-          <p>“Takes away the guesswork. I commute to multiple locations throughout the week with unpredictable city traffic. Great to sync my calendar and not worry about setting an alarm too late.”</p>
-          <cite>— App Store review</cite>
-        </blockquote>
-        <blockquote class="fade-up delay-1">
-          <p>“This app has saved me multiple times from unexpected traffic when going to work. The fact that it can predict when I need to be up is nothing short of magic.”</p>
-          <cite>— App Store review</cite>
-        </blockquote>
+        <blockquote class="fade-up"><p>“Takes away the guesswork. I commute to multiple locations throughout the week with unpredictable city traffic. Great to sync my calendar and not worry about setting an alarm too late.”</p><cite>— App Store review</cite></blockquote>
+        <blockquote class="fade-up delay-1"><p>“This app has saved me multiple times from unexpected traffic when going to work. The fact that it can predict when I need to be up is nothing short of magic.”</p><cite>— App Store review</cite></blockquote>
       </div>
     </div>
   </section>
@@ -179,13 +213,8 @@
 
   <script>
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
     }, { threshold: 0.12 });
-
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   </script>
 </body>
